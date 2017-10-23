@@ -1,8 +1,9 @@
 from wsgiref.simple_server import make_server
 from pyramid.config import Configurator
 from pyramid.response import Response
+from os import *
 
-ROOT="/home/eugeneai/ex-web-server"
+ROOT=getcwd()
 STATIC=ROOT+"/templates/jovaphile"
 
 def hello_world(request):
